@@ -1,0 +1,25 @@
+$TTL 3h
+; Origin added to names not ending
+; in a dot: 3.168.192.in-addr.arpa
+;
+; Registro SOA
+;
+1.168.192.in-addr.arpa.  IN SOA ns1.iesdmoreno.org. dmoreno.iesdmoreno.org. (
+1 ; Serial
+3h ; Refresh after 3 hours
+1h ; Retry after 1 hour
+1w ; Expire after 1 week
+1h ) ; Negative caching TTL of 1 hour
+;
+; Name servers (The name '@' is implied)
+;
+1.168.192.in-addr.arpa. IN NS ns1.iesdmoreno.org.
+1.168.192.in-addr.arpa. IN NS ns2.iesdmoreno.org.
+;
+; IPs que apuntan a nombres de dominio
+;
+10.1.168.192.in-addr.arpa. IN PTR ns2.iesdmoreno.org.
+3.1.168.192.in-addr.arpa. IN PTR eso.secundaria.iesdmoreno.org.
+4.1.168.192.in-addr.arpa. IN PTR bachiller.secundaria.iesdmoreno.org.
+
+
