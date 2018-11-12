@@ -15,6 +15,6 @@ $TTL 3h
 0.168.192.in-addr.arpa.     IN NS ns2.iesdmoreno.org.
 
 ; Addresses point to canonical names
-10.0.168.192.in-addr.arpa IN PTR ns1.iesdmoreno.org.
-3.0.168.192.in-addr.arpa IN PTR peluqueria.fp.iesdmoreno.org.    
-4.0.168.192.in-addr.arpa IN PTR informatica.fp.iesdmoreno.org.    
+10.0.168.192.in-addr.arpa. IN PTR ns1.iesdmoreno.org.
+3.0.168.192.in-addr.arpa. IN PTR peluqueria.fp.iesdmoreno.org.    
+4.0.168.192.in-addr.arpa. IN PTR informatica.fp.iesdmoreno.org.    
