@@ -1,15 +1,10 @@
-//
-// Do any local configuration here
-//
+// Configuracion de zonas
+// El servidor va a ser maestro para las 3 zonas
+// Se permite la transferencia de zonas al servidor esclavo
 
-// Consider adding the 1918 zones here, if they are not used in your
-// organization
-//include "/etc/bind/zones.rfc1918";
-
-
-zone "iesdmoreno.org" in {
+zone "midominio.org" in {
 	type master;
-	file "db.iesdmoreno.org";
+	file "db.midominio.org";
 	allow-transfer { 192.168.0.20; };	#permito transferencia de la zona a NS2
 };
 

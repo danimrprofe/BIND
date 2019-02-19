@@ -1,0 +1,28 @@
+$TTL 3h;
+
+midominio.org.     IN     SOA     dns1.midominio.org. dmoreno.midominio.org. (
+	2018111901;
+	3h;
+	1h;
+	1w;
+	1h;
+)
+
+; RR del tipo nameserver NS. Uno por cada servidor de nombres autoritativo en la zona.
+
+midominio.org.		IN	NS	dns1.midominio.org.
+
+; RR de tipo A
+
+server1		IN	A	172.16.254.1	// Web server
+server2		IN	A	172.16.254.2	// FTP server
+server3		IN	A	172.16.254.3	// DNS server
+server4		IN	A	172.16.254.4	// Proxy-cache
+
+; RR de tipo CNAME
+
+www		IN	CNAME	server1
+ftp		IN	CNAME	server2
+aulavirtual	IN	CNAME	server1
+dns1		IN	CNAME	server3
+proxy		IN	CNAME	server4
